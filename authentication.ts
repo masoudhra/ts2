@@ -22,7 +22,7 @@ class Authentication extends Controllers{
             password,
             username
         })
-        this.sendSMS("welcome to botostart website")
+        this.sendSMS("welcome to website")
         return {
             message: "user registred successfuly!"
         }
