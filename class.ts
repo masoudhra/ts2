@@ -47,3 +47,4 @@
 // const user : User = new User("Masoud Ramezani", "0936485435", 33)
 // user.editUserProfile({age: 35})
 // console.log(user.getUserProfile());
+
