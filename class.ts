@@ -48,3 +48,34 @@
 // user.editUserProfile({age: 35})
 // console.log(user.getUserProfile());
 
+
+
+type Profile = {
+    name: string;
+    mobile: string;
+    age: number;
+}
+
+class User{
+    name: string;
+    mobile: string;
+    age: number;
+
+    constructor(name: string, mobile: string, age: number){
+        this.name = name;
+        this.mobile = mobile;
+        this.age = age;
+
+    }
+
+    getUserProfile():Profile {
+        return{
+            name: this.name,
+            mobile: this.mobile,
+            age: this.age
+        }
+    }
+
+}
+const user : User = new User("Masoud Ramezani", "0936485435", 33)
+console.log(user.getUserProfile())
