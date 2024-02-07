@@ -81,6 +81,35 @@
 // console.log(user.getUserProfile())
 
 
+// type Profile = {
+//     name: string;
+//     mobile: string;
+//     age: number;
+// }
+
+// class User{
+//     name: string;
+//     mobile: string;
+//     age: number;
+
+//     constructor(name: string, mobile: string, age: number){
+//         this.name = name;
+//         this.mobile = mobile;
+//         this.age = age;
+//     }
+
+//     getIUserData():Profile{
+//         return{
+//             name: this.name,
+//             mobile: this.mobile,
+//             age: this.age
+//         }
+//     }
+// }
+// const user : User = new User("Masoud Ramezani", "0936485435", 33);
+// console.log(user.getIUserData())
+
+
 type Profile = {
     name: string;
     mobile: string;
@@ -96,9 +125,10 @@ class User{
         this.name = name;
         this.mobile = mobile;
         this.age = age;
-    }
 
-    getIUserData():Profile{
+    }
+    
+    getUserData(): Profile{
         return{
             name: this.name,
             mobile: this.mobile,
@@ -106,5 +136,6 @@ class User{
         }
     }
 }
-const user : User = new User("Masoud Ramezani", "0936485435", 33);
-console.log(user.getIUserData())
+
+const user : User = new User("Masoud", "023546864684", 33)
+console.log(user.getUserData())
