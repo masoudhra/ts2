@@ -1,6 +1,6 @@
 // Class -> User
 // backend -> create data & read DB send to frontend
-// front -> read & send data from/to backend 
+// front -> read & send data from/to backend
 // type profile = {
 //     name: string;
 //     mobile: string;
@@ -48,8 +48,6 @@
 // user.editUserProfile({age: 35})
 // console.log(user.getUserProfile());
 
-
-
 // type Profile = {
 //     name: string;
 //     mobile: string;
@@ -80,7 +78,6 @@
 // const user : User = new User("Masoud Ramezani", "0936485435", 33)
 // console.log(user.getUserProfile())
 
-
 // type Profile = {
 //     name: string;
 //     mobile: string;
@@ -109,33 +106,61 @@
 // const user : User = new User("Masoud Ramezani", "0936485435", 33);
 // console.log(user.getIUserData())
 
+// type Profile = {
+//     name: string;
+//     mobile: string;
+//     age: number;
+// }
+
+// class User{
+//     name: string;
+//     mobile: string;
+//     age: number;
+
+//     constructor(name: string, mobile: string, age: number){
+//         this.name = name;
+//         this.mobile = mobile;
+//         this.age = age;
+
+//     }
+
+//     getUserData(): Profile{
+//         return{
+//             name: this.name,
+//             mobile: this.mobile,
+//             age: this.age
+//         }
+//     }
+// }
+
+// const user : User = new User("Masoud", "023546864684", 33)
+// console.log(user.getUserData())
 
 type Profile = {
     name: string;
     mobile: string;
-    age: number;
+    age: number; 
 }
 
-class User{
-    name: string;
-    mobile: string;
-    age: number;
 
-    constructor(name: string, mobile: string, age: number){
-        this.name = name;
-        this.mobile = mobile;
-        this.age = age;
+class User {
+  name: string;
+  mobile: string;
+  age: number;
 
+  constructor(name: string, mobile: string, age: number){
+    this.name = name;
+    this.mobile = mobile;
+    this.age = age
+  }
+  getUserData():Profile{
+    return{
+        name: this.name,
+        mobile: this.mobile,
+        age: this.age
     }
-    
-    getUserData(): Profile{
-        return{
-            name: this.name,
-            mobile: this.mobile,
-            age: this.age
-        }
-    }
+  }
 }
 
-const user : User = new User("Masoud", "023546864684", 33)
+const user = new User("masoud", "0926637844", 33);
 console.log(user.getUserData())
