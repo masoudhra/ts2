@@ -9,9 +9,9 @@ class Animal {
 }
 
 class Caw extends Animal{
-    constructor(theName: string){
-        super(theName)
-        this.name = theName
+    constructor(name: string){
+        super(name)
+        this.name = name
     }
     AnimalName() {
         return this.name
